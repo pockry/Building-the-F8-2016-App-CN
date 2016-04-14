@@ -116,6 +116,6 @@ var F8UserType = new GraphQLObjectType({
 
 归功于 Relay 的内建逻辑，我们不用担心数据变化的监听，或者数据本地储存等等。我们只需要告诉 Relay 组件中应该有什么数据，然后以标准的 React 方式来设计我们需要的组件。如果 GraphQL 服务器已经搭建好，以上就是我们需要做的所有事情。
 
-我们的Info View 中没有数据的变化，然而如果你想了解更多原理，请阅读在 [Relay 在 mutations 上面的文档](https://facebook.github.io/relay/docs/guides-mutations.html#content)。
+我们的 Info View 中没有数据的变化，然而如果你想了解更多原理，请阅读在 [Relay 在 mutations 上面的文档](https://facebook.github.io/relay/docs/guides-mutations.html#content)。
 
 原文地址：http://makeitopen.com/tutorials/building-the-f8-app/relay/
