@@ -1,18 +1,18 @@
 # 构建 F8 2016 App 附录 II 使用 Relay 和 GraphQL
 
-在我们最初构建 app 时，[我们讨论了对数据层的选择](http://makeitopen.com/tutorials/building-the-f8-app/planning/#data-access-with-react-native)。并将我们最终使用的 [Redux](https://github.com/rackt/redux) 框架与 Facebook 的开源框架 [Relay](https://facebook.github.io/relay/) 进行了对比。
+在我们最初构建 app 时，[我们讨论了对数据层的选择](tutorials/Part 1. Planning The App.md)。并将我们最终使用的 [Redux](https://github.com/rackt/redux) 框架与 Facebook 的开源框架 [Relay](https://facebook.github.io/relay/) 进行了对比。
 
 当时我们选择了 Redux，是因为与 Relay 相比，Redux 提供了更便捷的数据层实现，且与 Parse 的数据存储可以更快更容易的结合使用。
 
-F8 的 IOS 和 Android 的应用开发完成上线后。我们再次回顾对数据层的框架选择，想尝试在我们的 App 中如何使用 Relay。
+F8 的 iOS 和 Android 的应用开发完成上线后。我们再次回顾对数据层的框架选择，想尝试在我们的 App 中如何使用 Relay。
 
 ## 缓慢的转变
 
 在传统原生 App 的开发中，更换数据层意味着整个应用的推翻重写，已有的功能都会被全部替换。
 
-React Native 则不同。替换一个独立的View的数据层时，已有的绝大部份数据设置逻辑（Redux, Parse, 和相关的绑定），我们都可以保留。不需要重写或大量重构，我们可以只把 app 中的某个模块的数据层替换为新的数据层，其余模块继续使用已有数据层。
+React Native 则不同。替换一个独立的 View 的数据层时，已有的绝大部份数据设置逻辑（Redux, Parse, 和相关的绑定），我们都可以保留。不需要重写或大量重构，我们可以只把 App 中的某个模块的数据层替换为新的数据层，其余模块继续使用已有数据层。
 
-需要说明的是，这种逐步改善 app 的能力可以极大的降低维护和升级的开销，对应用的开发非常有利。
+需要说明的是，这种逐步改善 App 的能力可以极大的降低维护和升级的开销，对应用的开发非常有利。
 
 那么相比 Redux，使用 Relay 和 GraphQL 如果处理数据层呢？
 
