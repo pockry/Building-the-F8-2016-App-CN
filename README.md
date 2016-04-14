@@ -12,11 +12,17 @@ Facebook在F8开发者大会上宣布他们用React Native开发了F8开发者�
 * Part 1: Planning The App（[已发布](tutorials/Part 1. Planning The App.md) by [@pockry](https://github.com/pockry)）
 * Part 2: Designing an App for Multiple Platforms（已认领 by [@lenville](https://github.com/lenville)）
 * Part 3: Integrating Data with React Native（已认领 by [@neuyu](https://github.com/neuyu)）
-* Part 4: Testing a React Native App
+* Part 4: Testing a React Native App（已认领 by [@vincent518720](https://github.com/vincent518720)）
 * Appendix I: Running the App Locally（已认领 by [@faceace](https://github.com/faceace)）
 * Appendix II: Using Relay and GraphQL（已认领 by [@Aspsine](https://github.com/Aspsine)）
-* Appendix III: Porting the F8 App To Windows(需翻译[这篇](https://ericroz.wordpress.com/2016/04/11/f8-app-on-windows-10-mobile/))
+* Appendix III: Porting the F8 App To Windows(需翻译[这篇](https://ericroz.wordpress.com/2016/04/11/f8-app-on-windows-10-mobile/) 已认领 by [@dustturtle](https://github.com/dustturtle))
 
 发现翻译问题，也欢迎随时在issue里指出，我们确认后会尽快更正。
+
+### 翻译注意事项
+
+中英文、中文和数字之间需加空格。
+
+---
 
 感谢您的参与~
