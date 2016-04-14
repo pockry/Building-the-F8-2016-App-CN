@@ -10,7 +10,7 @@ Facebook在F8开发者大会上宣布他们用React Native开发了F8开发者�
 教程一共7篇，我们采用开放的方式来翻译这个教程，欢迎大家在issue里评论认领。
 
 * Part 1: Planning The App（[已发布](tutorials/Part 1. Planning The App.md) by [@pockry](https://github.com/pockry)）
-* Part 2: Designing an App for Multiple Platforms
+* Part 2: Designing an App for Multiple Platforms（已认领 by 振涛）
 * Part 3: Integrating Data with React Native
 * Part 4: Testing a React Native App
 * Appendix I: Running the App Locally
