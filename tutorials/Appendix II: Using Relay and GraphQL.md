@@ -112,7 +112,7 @@ var F8UserType = new GraphQLObjectType({
 });
 ```
 
-你可以看到数据是如何从GraphQL服务器上被获取的，然后Relay开始接手所有需要的且在Fragment中指定的数据。这时｀viewer｀的参数就可以被<InfoList>组件访问到了，使用了一些[destructuring assignments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)，反过来构建了在组件中使用的`config`，`faq`，`pages`变量。
+你可以看到数据是如何从GraphQL服务器上被获取的，然后Relay开始接手所有需要的且在Fragment中指定的数据。这时`viewer`的参数就可以被<InfoList>组件访问到了，使用了一些[destructuring assignments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)，反过来构建了在组件中使用的`config`，`faq`，`pages`变量。
 
 归功于Relay的内建逻辑，我们不用担心数据变化的监听，或者数据本地储存等等。我们只需要告诉Relay 组件中应该有什么数据，然后以标准的React方式来设计我们需要的组件。如果GraphQL服务器已经搭建好，以上就是我们需要做的所有事情。
 
