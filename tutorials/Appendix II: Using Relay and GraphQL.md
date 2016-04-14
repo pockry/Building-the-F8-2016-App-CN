@@ -118,6 +118,4 @@ var F8UserType = new GraphQLObjectType({
 
 我们的Info View 中没有数据的变化，然而如果你想了解更多原理，请阅读在 [Relay在 mutations 上面的文档](https://facebook.github.io/relay/docs/guides-mutations.html#content)。
 
-
-
-
+原文地址：http://makeitopen.com/tutorials/building-the-f8-app/relay/
