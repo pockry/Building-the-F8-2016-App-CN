@@ -6,7 +6,7 @@
 https://www.youtube.com/watch?v=51_M9Dp5X80&feature=youtu.be
  (国内用户需翻墙才能查看)
 
-将 F8 应用移植到 windows 平台占用了一个 3 人小组 80/100 的时间，历时 3 周完成。我们将此数据完全透明的公布给大家，主要是基于这样的考虑：决定作出是否要用 React Native 开发这样的技术决策而言，开发效率是一个重要的参考指标。
+将 F8 应用移植到 windows 平台占用了一个 3 人小组 80/100 的时间，历时 3 周完成。我们将此数据完全透明的公布给大家，主要是基于这样的考虑：决策是否使用 React Native 这样的技术来进行开发，开发效率是一个很重要的参考指标。
 
 虽然我们揭开了 React Native 在 windows 平台开发的序幕，但当前 React Native 的部分核心视图管理器和原生模块在 windows 上仍不可用， React Native 的第三方依赖库也都还不支持 windows 平台。具体就这个应用来说，缺少针对菜单和过滤器的 SplitView 视图管理器；缺少切换 tab 和会话页的FlipView视图管理器; 在滚动视图管理器里面，缺少合适的运行事件用来处理拖拽和内容视图更新。我们也缺少一个剪贴板模块-用来拷贝粘贴 wifi 的详情；缺少用作导航状态存储的异步存储模块；缺少用作登出和其他警告处理的对话框模块；也缺少一个用来处理应用的信息tab页中的链接行为的启动器模块。对于第三方模块，我们缺少[线性渐变视图管理器](https://github.com/brentvatne/react-native-linear-gradient)、[facebook sdk 模块](https://github.com/facebook/react-native-fbsdk)、 [React Native 分享模块](https://github.com/EstebanFuentealba/react-native-share)。其中一部分，例如启动器模块，花了我们小半天时间搞定。其他更复杂的模块，比如 facebook sdk 模块，花了我们超过 1 天的时间；这里主要的工作量在于找到恰当的原生 api 依赖，然后实现功能并且测试。
 
@@ -105,7 +105,7 @@ class F8TabsView extends React.Component {
   ...
 }
 ```
- React Native 的理念是做一个“垂直的平台“，意思是更倾向于"learn once, write anywhere"，以区别于 java 的"write once, run everywhere"。虽然我们的 F8 windows 应用体验接近于 Android，但如果有更多的开发时间，我们很可能会修改其界面和菜单让它看起来更像是一个 windows 应用。例如在 XAML 中，SplitView 支持一种紧凑的显示模式，其 panel 关闭时该视图仅从一个下拉菜单里显示所有的 icon 图片。对应用的桌面版本和 [continuum](https://msdn.microsoft.com/en-us/library/windows/hardware/dn917883%28v=vs.85%29.aspx) 特性来说，这个体验很棒。同时，在 XAML 中 pivot 被广泛用于翻页，拥有 pivot 风格的页面和会话标题对 windows 用户来说将会是更熟悉的体验。
+ React Native 的理念是做一个“水平的平台“，意思是更倾向于"learn once, write anywhere"，以区别于 java 的"write once, run everywhere"。虽然我们的 F8 windows 应用体验接近于 Android，但如果有更多的开发时间，我们很可能会修改其界面和菜单让它看起来更像是一个 windows 应用。例如在 XAML 中，SplitView 支持一种紧凑的显示模式，其 panel 关闭时该视图仅从一个下拉菜单里显示所有的 icon 图片。对应用的桌面版本和 [continuum](https://msdn.microsoft.com/en-us/library/windows/hardware/dn917883%28v=vs.85%29.aspx) 特性来说，这个体验很棒。同时，在 XAML 中 pivot 被广泛用于翻页，拥有 pivot 风格的页面和会话标题对 windows 用户来说将会是更熟悉的体验。
 
 总的来说，我们基于 React Native 将 F8 开发者大会应用移植到 windows 的过程让人感觉很好； React Native 应用移植到 windows 平台也将会变得越来越容易。我们希望我们所作出的努力可以证明在 windows 平台上用 React Native 开发绝不仅仅是实验性质的。通过社区的强大支持，它可能为你的 React Native 应用带来更广泛的受众（来自 windows 平台的用户）；这是一个属于 React Native 开发者的绝好机会。
 
