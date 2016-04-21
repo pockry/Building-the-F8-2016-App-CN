@@ -58,7 +58,7 @@ Flux 通过引入 Stores 概念，应用的 `state` 对象容器，新的工作�
 * 一旦获取到新数据后，它们会调用 `setState()` ，其会致使在该视图里的组件重新 render 。
 
 你可以看到在 React 应用中 Flux 如何帮助 React 强制执行 one-way flow 策略 ，并且其会使得 React 的数据部分更加优雅和有结构。
-e
+
 我们现在不使用 Flux ,所以在这篇文章里不会再有更多该细节，但是如果你想了解更多，这儿有一些在 Flux 网站的[教程](https://facebook.github.io/flux/docs/todo-list.html)可以阅读。
 
 所以 Redux 关 Flux 什么事，在我们应用中实际使用框架 Redux 呢？
@@ -81,7 +81,8 @@ Redux 是 Flux 架构的框架实现，但是其也可以剥离开来，react-re
 
 该工作流可以通过下图简单总结：
 
-![](http://makeitopen.com/static/images/redux_flowchart.png）
+
+![redux_flowchart](http://makeitopen.com/static/images/redux_flowchart.png）
 
 你可以看到数据是如何遵循一个明确的单向通道，没有重叠或相反的方向流动。这也说明 Redux 可以将 app 的每一部分细分。 Store 只关注 `state` ,视图中的组件只关注展示数据和触发事件， Actions 只关注 `state` 的变化和其内部的数据。 Reducers 只关注融合旧的 `state` 和 actions 到新的 `state` 。当你阅读器源代码并理解它时，你会发现一切都是模块化，优雅和具有明确目的的。
 
